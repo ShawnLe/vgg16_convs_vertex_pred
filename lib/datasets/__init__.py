@@ -6,16 +6,7 @@
 # --------------------------------------------------------
 
 from .imdb import imdb
-from .shapenet_scene import shapenet_scene
-from .shapenet_single import shapenet_single
-from .gmu_scene import gmu_scene
-from .rgbd_scene import rgbd_scene
 from .lov import lov
-from .lov_single import lov_single
-from .ycb import ycb
-from .ycb_single import ycb_single
-from .yumi import yumi
-from .linemod import linemod
 from .sym import sym
 from . import factory
 
