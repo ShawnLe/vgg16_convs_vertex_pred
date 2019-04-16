@@ -1,7 +1,7 @@
 import _init_paths
-from datasets.factory import get_imdb
-from fcn.train import get_training_roidb
-from gt_data_layer.layer import GtDataLayer
+# from datasets.factory import get_imdb
+# from fcn.train import get_training_roidb
+# from gt_data_layer.layer import GtDataLayer
 
 class args_setter(object):
   
@@ -12,10 +12,11 @@ class train_starter(object):
 
     def __init__(self):
 
-        args = args_setter()
-        imdb = get_imdb(args.imdb_name)
-        print 'Loaded dataset `{:s}` for training'.format(imdb.name)
+        # args = args_setter()
+        # imdb = get_imdb(args.imdb_name)
+        # print 'Loaded dataset `{:s}` for training'.format(imdb.name)
 
-        roidb = get_training_roidb(imdb)
+        # roidb = get_training_roidb(imdb)
 
-        data_layer = GtDataLayer(roidb, imdb.num_classes)
+        # data_layer = GtDataLayer(roidb, imdb.num_classes)
+        return 1

@@ -9,15 +9,15 @@
 
 __sets = {}
 
-import datasets.lov
-import numpy as np
+# import datasets.lov
+# import numpy as np
 
-# lov dataset
-for split in ['train', keyframe']:
-    name = 'lov_{}'.format(split)
-    print name
-    __sets[name] = (lambda split=split:
-            datasets.lov(split))
+# # lov dataset
+# for split in ['train', keyframe']:
+#     name = 'lov_{}'.format(split)
+#     print name
+#     __sets[name] = (lambda split=split:
+#             datasets.lov(split))
 
 def get_imdb(name):
     """Get an imdb (image database) by name."""
@@ -25,6 +25,6 @@ def get_imdb(name):
         raise KeyError('Unknown dataset: {}'.format(name))
     return __sets[name]()
 
-def list_imdbs():
-    """List all registered imdbs."""
-    return __sets.keys()
+# def list_imdbs():
+#     """List all registered imdbs."""
+#     return __sets.keys()
